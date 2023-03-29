@@ -1,0 +1,58 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Index.Master.cs" Inherits="Assignment.Index" %>
+
+<!DOCTYPE html>
+<head runat="server">
+    <title><asp:ContentPlaceHolder ID="title" runat="server"></asp:ContentPlaceHolder></title>
+    <style type="text/css">
+        .auto-style1 {
+            height: 26px;
+        }
+    </style>
+</head>
+<html>
+<body>
+    <form id="form1" runat="server">
+        <header id="header" class="fixed-top">
+            <!-- Logo -->
+            <div style="height: 100px;">
+                <a href="AdminDashboard.aspx" style="float: left">
+                    <img src="assets/srcLogo.jpg" alt="SRC"  style="height: 5em"/>
+                </a>
+                <a href="AdminDashboard.aspx">
+                    <p style="font-size :2em">SRC Voting System</p>
+                </a>
+            </div>
+        </header>
+        <div>
+            <table>
+                <tr>
+                    <td rowspan="3" class="auto-style1" style="text-align: left; vertical-align: top">
+                        <asp:SiteMapDataSource ID="SiteMapDataSource1" runat="server"/>
+                        <asp:TreeView ID="TreeView1" text-align="top" runat="server" DataSourceID="SiteMapDataSource1" ShowExpandCollapse="False" OnTreeNodeDataBound="TreeView1_TreeNodeDataBound">
+                        </asp:TreeView>
+                    </td>
+                    <td class="auto-style1"><asp:ContentPlaceHolder ID="siteName" runat="server"></asp:ContentPlaceHolder></td>
+                </tr>
+                <tr>
+                    <td>
+                        <asp:SiteMapPath ID="SiteMapPath1" runat="server"></asp:SiteMapPath>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server"></asp:ContentPlaceHolder>
+                    </td>
+                </tr>
+            </table>
+        </div>    
+        <footer id="footer" class="fixed-bottom" style="text-align: center">
+            <div>
+                &copy; Copyright <strong><span>TARUMT Student Council</span></strong>. All Rights Reserved
+            </div>
+            <div>
+                <img src="assets/srcLogo.jpg" alt="SRC" style="width:300px; height:150px"/>
+            </div>
+        </footer>
+    </form>
+</body>
+</html>

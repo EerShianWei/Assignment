@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<siteMap xmlns="http://schemas.microsoft.com/AspNet/SiteMap-File-1.0" >
+	<siteMapNode url="" visible="false">
+		<siteMapNode url="~/AdminDashboard.aspx" title="Dashboard"  description="Admin Dashboard" imageUrl="Dashboard.png"/>
+		<siteMapNode url="~/AdminAccount.aspx" title="Account"  description="Admin Account" imageUrl="Account.png"/>
+		<siteMapNode url="~/AdminNominee.aspx" title="Nominee"  description="Admin Nominee" imageUrl="Nominee.png"/>
+		<siteMapNode url="~/AdminVoter.aspx" title="Voter"  description="Admin Voter" imageUrl="Voter.png"/>
+		<siteMapNode url="~/AdminCandidate.aspx" title="Candidate"  description="Admin Candidate" imageUrl="Candidate.png"/>
+		<siteMapNode url="~/AdminLogout.aspx" title="Logout"  description="Admin Logout" imageUrl="Logout.png"/>
+	</siteMapNode>
+</siteMap>
